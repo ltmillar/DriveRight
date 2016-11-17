@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=weightSensor.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\weightSensor -TC:\CooCox\CoIDE\configuration\ProgramData\weightSensor/arm-gcc-link.ld -g">
+      <target file="weightSensor.elf" lastModified="15860425c39">
+         <source file="..\obj\semihosting.o" lastModified="15860425510"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15860425593"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="158604255d8"/>
+         <source file="..\obj\main.o" lastModified="1586042565c"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="158604256df"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="15860425759"/>
+         <source file="..\obj\printf.o" lastModified="158604257cd"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15860425821"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="15860425895"/>
+         <source file="..\obj\sh_cmd.o" lastModified="158604258a4"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="158604258e9"/>
+         <source file="..\obj\syscalls.o" lastModified="15860425937"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="1586042599c"/>
+         <source file="..\obj\IOToggle.o" lastModified="158604259e1"/>
+         <source file="..\obj\ADC3_DMA.o" lastModified="15860425a45"/>
+      </target>
+   </processor>
+</history>
