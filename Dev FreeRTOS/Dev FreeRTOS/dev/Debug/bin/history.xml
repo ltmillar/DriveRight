@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=dev.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\dev -TC:\CooCox\CoIDE\configuration\ProgramData\dev/arm-gcc-link.ld -g">
+      <target file="dev.elf" lastModified="15873383fa5">
+         <source file="..\obj\bluetooth.o" lastModified="15873383d71"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15873352e3b"/>
+         <source file="..\obj\stm32f4xx_pwr.o" lastModified="15873352ee2"/>
+         <source file="..\obj\stm32f4xx_can.o" lastModified="15873352fd0"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15873353047"/>
+         <source file="..\obj\main.o" lastModified="158733531ac"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15873353251"/>
+         <source file="..\obj\timers.o" lastModified="158733533a2"/>
+         <source file="..\obj\stm32f4xx_dcmi.o" lastModified="1587335342b"/>
+         <source file="..\obj\tasks.o" lastModified="158733534fc"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1587335357b"/>
+         <source file="..\obj\list.o" lastModified="158733535f0"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1587335366a"/>
+         <source file="..\obj\port.o" lastModified="158733536f8"/>
+         <source file="..\obj\queue.o" lastModified="158733537b2"/>
+         <source file="..\obj\croutine.o" lastModified="15873353823"/>
+         <source file="..\obj\misc.o" lastModified="15873353896"/>
+         <source file="..\obj\heap_2.o" lastModified="1587335390a"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15873353a0c"/>
+      </target>
+   </processor>
+</history>
