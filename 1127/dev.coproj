@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.5" name="dev">
+  <Target name="dev" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="FPU" value="1"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+          <Define name="__FPU_USED"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Not use C Library"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/dev/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="dev"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
+    <Component id="54" name="M4 CMSIS Core" path="" type="2"/>
+    <Component id="500" name="CMSIS BOOT" path="" type="2"/>
+    <Component id="501" name="RCC" path="" type="2"/>
+    <Component id="504" name="GPIO" path="" type="2"/>
+    <Component id="509" name="SPI" path="" type="2"/>
+    <Component id="510" name="I2C" path="" type="2"/>
+    <Component id="511" name="DMA" path="" type="2"/>
+    <Component id="513" name="TIM" path="" type="2"/>
+    <Component id="514" name="ADC" path="" type="2"/>
+    <Component id="517" name="USART" path="" type="2"/>
+    <Component id="520" name="SDIO" path="" type="2"/>
+    <Component id="524" name="MISC" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
+    <File name="Modules/GPS module/GPS_parsing.c" path="Source/GPS module/GPS_parsing.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/drivers/fatfs_sd.h" path="Source/tm_stm32f4_fatfs/fatfs/drivers/fatfs_sd.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_delay/tm_stm32f4_delay.h" path="Source/tm_stm32f4_delay/tm_stm32f4_delay.h" type="1"/>
+    <File name="Modules/Arducam module/arducam.h" path="Source/Arducam/arducam.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/ffconf.h" path="Source/tm_stm32f4_fatfs/fatfs/ffconf.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_spi" path="" type="2"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="Initialization/init.h" path="Source/Init/init.h" type="1"/>
+    <File name="Modules/Arducam module/ov2640_regs.h" path="Source/Arducam/ov2640_regs.h" type="1"/>
+    <File name="Modules/Arducam module/arducam.c" path="Source/Arducam/arducam.c" type="1"/>
+    <File name="Modules/Bluetooth module/Bluetooth.c" path="Bluetooth.c" type="1"/>
+    <File name="Modules/Arducam module" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_gpio/tm_stm32f4_gpio.c" path="Source/tm_stm32f4_gpio/tm_stm32f4_gpio.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/drivers/fatfs_sd.c" path="Source/tm_stm32f4_fatfs/fatfs/drivers/fatfs_sd.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/drivers" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/ff.c" path="Source/tm_stm32f4_fatfs/fatfs/ff.c" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="FreeRTOS/source/include" path="" type="2"/>
+    <File name="FreeRTOS/source/include/StackMacros.h" path="FreeRTOS/Source/include/StackMacros.h" type="1"/>
+    <File name="Modules/Bluetooth module/Bluetooth.h" path="Bluetooth.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="Modules/Accelerometer Module" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/tm_stm32f4_fatfs.c" path="Source/tm_stm32f4_fatfs/tm_stm32f4_fatfs.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_delay/tm_stm32f4_timer_properties.c" path="Source/tm_stm32f4_delay/tm_stm32f4_timer_properties.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/tm_stm32f4_fatfs.h" path="Source/tm_stm32f4_fatfs/tm_stm32f4_fatfs.h" type="1"/>
+    <File name="Modules/GPS module/GPS_parsing.h" path="Source/GPS module/GPS_parsing.h" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="FreeRTOS/source/include/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_gpio/tm_stm32f4_gpio.h" path="Source/tm_stm32f4_gpio/tm_stm32f4_gpio.h" type="1"/>
+    <File name="FreeRTOS/source" path="" type="2"/>
+    <File name="Initialization" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_delay/tm_stm32f4_timer_properties.h" path="Source/tm_stm32f4_delay/tm_stm32f4_timer_properties.h" type="1"/>
+    <File name="FreeRTOS/source/portable" path="" type="2"/>
+    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
+    <File name="FreeRTOS/source/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
+    <File name="defines.h" path="defines.h" type="1"/>
+    <File name="FreeRTOS/source/portable/GCC/ARM_CM4F" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs" path="" type="2"/>
+    <File name="FreeRTOS/source/include/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="Modules/GPS module" path="" type="2"/>
+    <File name="FreeRTOS/source/include/croutine.h" path="FreeRTOS/Source/include/croutine.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/attributes.h" path="Source/tm_stm32f4_fatfs/attributes.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/diskio.h" path="Source/tm_stm32f4_fatfs/fatfs/diskio.h" type="1"/>
+    <File name="FreeRTOS/source/include/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_delay" path="" type="2"/>
+    <File name="FreeRTOS/source/include/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/options" path="" type="2"/>
+    <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_delay/attributes.h" path="Source/tm_stm32f4_delay/attributes.h" type="1"/>
+    <File name="FreeRTOS/source/include/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
+    <File name="PI_Communication/Pi_comm.c" path="Source/Pi_communication/Pi_comm.c" type="1"/>
+    <File name="Modules/SD Interface" path="" type="2"/>
+    <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_spi/tm_stm32f4_spi.c" path="Source/tm_stm32f4_spi/tm_stm32f4_spi.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/diskio.c" path="Source/tm_stm32f4_fatfs/fatfs/diskio.c" type="1"/>
+    <File name="FreeRTOS/source/portable/GCC/ARM_CM4F/heap_2.c" path="FreeRTOS/Source/portable/MemMang/heap_2.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
+    <File name="cmsis_lib/source" path="" type="2"/>
+    <File name="FreeRTOS/source/portable/GCC/ARM_CM4F/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" type="1"/>
+    <File name="PI_Communication/Pi_comm.h" path="Source/Pi_communication/Pi_comm.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="FreeRTOS/source/include/FreeRTOS.h" path="FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
+    <File name="FreeRTOS/source/include/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_gpio" path="" type="2"/>
+    <File name="FreeRTOS/source/queue.c" path="FreeRTOS/Source/queue.c" type="1"/>
+    <File name="FreeRTOS/source/portable/GCC" path="" type="2"/>
+    <File name="Modules/Bluetooth module" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/integer.h" path="Source/tm_stm32f4_fatfs/fatfs/integer.h" type="1"/>
+    <File name="Modules" path="" type="2"/>
+    <File name="PI_Communication" path="" type="2"/>
+    <File name="FreeRTOS/source/list.c" path="FreeRTOS/Source/list.c" type="1"/>
+    <File name="Modules/Accelerometer Module/Accelerometer.h" path="Source/Accelerometer/Accelerometer.h" type="1"/>
+    <File name="Initialization/init.c" path="Source/Init/init.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_sdio.h" path="cmsis_lib/include/stm32f4xx_sdio.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_sdio.c" path="cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
+    <File name="FreeRTOS/source/include/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/options/unicode.c" path="Source/tm_stm32f4_fatfs/fatfs/option/unicode.c" type="1"/>
+    <File name="FreeRTOS/source/portable/GCC/ARM_CM4F/port.c" path="FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/options/syscall.c" path="Source/tm_stm32f4_fatfs/fatfs/option/syscall.c" type="1"/>
+    <File name="FreeRTOS/source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_spi/tm_stm32f4_spi.h" path="Source/tm_stm32f4_spi/tm_stm32f4_spi.h" type="1"/>
+    <File name="FreeRTOS/source/include/FreeRTOSConfig.h" path="FreeRTOS/Source/include/FreeRTOSConfig.h" type="1"/>
+    <File name="FreeRTOS/source/include/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="Modules/Accelerometer Module/Accelerometer.c" path="Source/Accelerometer/Accelerometer.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_delay/tm_stm32f4_delay.c" path="Source/tm_stm32f4_delay/tm_stm32f4_delay.c" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="FreeRTOS" path="" type="2"/>
+    <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/ff.h" path="Source/tm_stm32f4_fatfs/fatfs/ff.h" type="1"/>
+    <File name="FreeRTOS/source/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
+  </Files>
+</Project>
