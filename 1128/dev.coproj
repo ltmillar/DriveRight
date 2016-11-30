@@ -97,9 +97,9 @@
     <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/ffconf.h" path="Source/tm_stm32f4_fatfs/fatfs/ffconf.h" type="1"/>
     <File name="Modules/SD Interface/tm_stm32_spi" path="" type="2"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
-    <File name="Modules/Arducam module/ov2640_regs.h" path="Source/Arducam/ov2640_regs.h" type="1"/>
-    <File name="Initialization/init.h" path="Source/Init/init.h" type="1"/>
     <File name="Modules/WeightSensor/weightsensor.h" path="Source/WeightSensor/weightsensor.h" type="1"/>
+    <File name="Initialization/init.h" path="Source/Init/init.h" type="1"/>
+    <File name="Modules/Arducam module/ov2640_regs.h" path="Source/Arducam/ov2640_regs.h" type="1"/>
     <File name="Modules/Arducam module/arducam.c" path="Source/Arducam/arducam.c" type="1"/>
     <File name="Modules/Bluetooth module/Bluetooth.c" path="Bluetooth.c" type="1"/>
     <File name="Modules/WeightSensor/IOToggle.c" path="Source/WeightSensor/IOToggle.c" type="1"/>
@@ -143,8 +143,8 @@
     <File name="Modules/SD Interface/tm_stm32_fatfs/attributes.h" path="Source/tm_stm32f4_fatfs/attributes.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
-    <File name="FreeRTOS/source/include/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
     <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/diskio.h" path="Source/tm_stm32f4_fatfs/fatfs/diskio.h" type="1"/>
+    <File name="FreeRTOS/source/include/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="Modules/SD Interface/tm_stm32_delay" path="" type="2"/>
     <File name="FreeRTOS/source/include/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
@@ -154,17 +154,17 @@
     <File name="FreeRTOS/source/include/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
     <File name="PI_Communication/Pi_comm.c" path="Source/Pi_communication/Pi_comm.c" type="1"/>
     <File name="Modules/SD Interface" path="" type="2"/>
-    <File name="Modules/SD Interface/tm_stm32_spi/tm_stm32f4_spi.c" path="Source/tm_stm32f4_spi/tm_stm32f4_spi.c" type="1"/>
     <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_spi/tm_stm32f4_spi.c" path="Source/tm_stm32f4_spi/tm_stm32f4_spi.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
     <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/diskio.c" path="Source/tm_stm32f4_fatfs/fatfs/diskio.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
     <File name="cmsis_lib/source" path="" type="2"/>
     <File name="PI_Communication/Pi_comm.h" path="Source/Pi_communication/Pi_comm.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
-    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
     <File name="FreeRTOS/source/portable/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
     <File name="FreeRTOS/source/include/FreeRTOS.h" path="FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
     <File name="FreeRTOS/source/include/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
     <File name="Modules/SD Interface/tm_stm32_gpio" path="" type="2"/>
@@ -183,8 +183,8 @@
     <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/options/unicode.c" path="Source/tm_stm32f4_fatfs/fatfs/option/unicode.c" type="1"/>
     <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs/options/syscall.c" path="Source/tm_stm32f4_fatfs/fatfs/option/syscall.c" type="1"/>
     <File name="FreeRTOS/source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
-    <File name="Modules/SD Interface/tm_stm32_spi/tm_stm32f4_spi.h" path="Source/tm_stm32f4_spi/tm_stm32f4_spi.h" type="1"/>
     <File name="FreeRTOS/source/include/FreeRTOSConfig.h" path="FreeRTOS/Source/include/FreeRTOSConfig.h" type="1"/>
+    <File name="Modules/SD Interface/tm_stm32_spi/tm_stm32f4_spi.h" path="Source/tm_stm32f4_spi/tm_stm32f4_spi.h" type="1"/>
     <File name="FreeRTOS/source/include/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
     <File name="Modules/SD Interface/tm_stm32_fatfs/fatfs" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>

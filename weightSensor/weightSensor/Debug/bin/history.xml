@@ -1,22 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=weightSensor.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\weightSensor -TC:\CooCox\CoIDE\configuration\ProgramData\weightSensor/arm-gcc-link.ld -g">
-      <target file="weightSensor.elf" lastModified="15860425c39">
-         <source file="..\obj\semihosting.o" lastModified="15860425510"/>
-         <source file="..\obj\stm32f4xx_usart.o" lastModified="15860425593"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="158604255d8"/>
-         <source file="..\obj\main.o" lastModified="1586042565c"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="158604256df"/>
-         <source file="..\obj\stm32f4xx_adc.o" lastModified="15860425759"/>
-         <source file="..\obj\printf.o" lastModified="158604257cd"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15860425821"/>
-         <source file="..\obj\stm32f4xx_flash.o" lastModified="15860425895"/>
-         <source file="..\obj\sh_cmd.o" lastModified="158604258a4"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="158604258e9"/>
-         <source file="..\obj\syscalls.o" lastModified="15860425937"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="1586042599c"/>
-         <source file="..\obj\IOToggle.o" lastModified="158604259e1"/>
-         <source file="..\obj\ADC3_DMA.o" lastModified="15860425a45"/>
+      <target file="weightSensor.elf" lastModified="158b6c85f61">
+         <source file="..\obj\semihosting.o" lastModified="158b6c858b6"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="158b6c85932"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="158b6c85978"/>
+         <source file="..\obj\main.o" lastModified="158b6c859cd"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="158b6c85a52"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="158b6c85ad5"/>
+         <source file="..\obj\printf.o" lastModified="158b6c85b3d"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="158b6c85b9c"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="158b6c85c17"/>
+         <source file="..\obj\sh_cmd.o" lastModified="158b6c85c25"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="158b6c85c74"/>
+         <source file="..\obj\syscalls.o" lastModified="158b6c85cc2"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="158b6c85d28"/>
+         <source file="..\obj\IOToggle.o" lastModified="158b6c85d73"/>
       </target>
    </processor>
 </history>

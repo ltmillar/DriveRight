@@ -1,13 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\workspace\weightSensor\cmsis /I..\..\..\workspace /I..\..\..\workspace\weightSensor\semihosting /I..\..\..\workspace\weightSensor\cmsis_lib\include /I..\..\..\workspace\weightSensor\cmsis_boot /I..\..\..\workspace\weightSensor\cmsis_lib /I..\..\..\workspace\weightSensor">
-      <source file="..\..\..\example\ADC3_DMA.c" lastModified="158604256f3">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
-      </source>
+   <includePath signature="/I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_lib /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_lib\include /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_boot /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\semihosting">
       <source file="..\..\..\cmsis\core_cm4.h" lastModified="1582beeeff7">
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
@@ -65,7 +58,10 @@
       </source>
       <source file="..\..\..\semihosting\semihosting.h" lastModified="1582beedde7">
       </source>
-      <source file="..\..\..\main.c" lastModified="15830433a7b">
+      <source file="..\..\..\main.c" lastModified="158b6c84edf">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1582beef014">
       </source>
