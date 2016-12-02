@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -D__FPU_USED -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\tm_stm32f4_fatfs\fatfs -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\Arducam -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\tm_stm32f4_spi -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\cmsis_lib\include -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\tm_stm32f4_gpio -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128 -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\FreeRTOS\Source\portable -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\FreeRTOS\Source -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\tm_stm32f4_fatfs\fatfs\drivers -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\cmsis_boot -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\FreeRTOS -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\cmsis -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\tm_stm32f4_fatfs -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\FreeRTOS\Source\include -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\Pi_communication -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\tm_stm32f4_delay -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\Accelerometer -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\GPS module -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\FreeRTOS\Source\portable\GCC\ARM_CM4F -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\FreeRTOS\Source\portable\GCC -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\WeightSensor -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\Source\Init -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\1128\cmsis_lib">
+      <target file="IOToggle.o" lastModified="158c1afd5ca">
+         <source file="..\..\..\Source\WeightSensor\IOToggle.c" lastModified="158b208330e"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="158c1afd348">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="158b2083484"/>
+      </target>
+      <target file="tm_stm32f4_fatfs.o" lastModified="158c1afc55a">
+         <source file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.c" lastModified="158b20833bc"/>
+      </target>
+      <target file="diskio.o" lastModified="158c1afc738">
+         <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.c" lastModified="158b2083325"/>
+      </target>
+      <target file="tasks.o" lastModified="158c1afd122">
+         <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="158b20832d7"/>
+      </target>
+      <target file="stm32f4xx_sdio.o" lastModified="158c1afc623">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="158b2083494"/>
+      </target>
+      <target file="Pi_comm.o" lastModified="158c1afcf1b">
+         <source file="..\..\..\Source\Pi_communication\Pi_comm.c" lastModified="158b20832ff"/>
+      </target>
+      <target file="tm_stm32f4_gpio.o" lastModified="158c1afdcf7">
+         <source file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.c" lastModified="158b20833c5"/>
+      </target>
+      <target file="ADC3_DMA.o" lastModified="158c1afdc84">
+         <source file="..\..\..\Source\WeightSensor\ADC3_DMA.c" lastModified="158b2083309"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="158c1afc77c">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="158b2083403"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="158c1afde2b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="158b20834a4"/>
+      </target>
+      <target file="croutine.o" lastModified="158c1afdab0">
+         <source file="..\..\..\FreeRTOS\Source\croutine.c" lastModified="158b2083248"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="158c1afcccd">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="158b2083475"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="158c1afd3f8">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="158b208341d"/>
+      </target>
+      <target file="misc.o" lastModified="158c1afdc0e">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="158b208346f"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="158c1afd4cf">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="158b208347e"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="158c1afdb2f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="158b208349a"/>
+      </target>
+      <target file="queue.o" lastModified="158c1afd8b4">
+         <source file="..\..\..\FreeRTOS\Source\queue.c" lastModified="158b20832d0"/>
+      </target>
+      <target file="Accelerometer.o" lastModified="158c1afd560">
+         <source file="..\..\..\Source\Accelerometer\Accelerometer.c" lastModified="158c1afa2c0"/>
+      </target>
+      <target file="unicode.o" lastModified="158c1afc5a7">
+         <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\unicode.c" lastModified="158b20833b7"/>
+      </target>
+      <target file="list.o" lastModified="158c1afd3a4">
+         <source file="..\..\..\FreeRTOS\Source\list.c" lastModified="158b20832ae"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="158c1afcb03">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="158b208348f"/>
+      </target>
+      <target file="port.o" lastModified="158c1afd802">
+         <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c" lastModified="158b20832b4"/>
+      </target>
+      <target file="Bluetooth.o" lastModified="158c1afca70">
+         <source file="..\..\..\Bluetooth.c" lastModified="158b2083242"/>
+      </target>
+      <target file="timers.o" lastModified="158c1afcb8e">
+         <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="158b20832de"/>
+      </target>
+      <target file="syscalls.o" lastModified="158c1afd45b">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="158b20834c4"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="158c1afdbb6">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="158b208348a"/>
+      </target>
+      <target file="syscall.o" lastModified="158c1afd175">
+         <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\syscall.c" lastModified="158b20833b2"/>
+      </target>
+      <target file="tm_stm32f4_delay.o" lastModified="158c1afd055">
+         <source file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.c" lastModified="158b2083316"/>
+      </target>
+      <target file="tm_stm32f4_spi.o" lastModified="158c1afd2c8">
+         <source file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.c" lastModified="158b20833d2"/>
+      </target>
+      <target file="heap_1.o" lastModified="158c1afdd50">
+         <source file="..\..\..\FreeRTOS\Source\portable\MemMang\heap_1.c" lastModified="158b20832bd"/>
+      </target>
+      <target file="ff.o" lastModified="158c1afda54">
+         <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.c" lastModified="158b208336a"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="158c1afc6a4">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="158b20834ab"/>
+      </target>
+      <target file="GPS_parsing.o" lastModified="158c1afcfc2">
+         <source file="..\..\..\Source\GPS module\GPS_parsing.c" lastModified="158b20832f4"/>
+      </target>
+   </processor>
+</history>
