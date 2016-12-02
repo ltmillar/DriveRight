@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
    <includePath signature="/I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_lib /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_lib\include /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_boot /I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\semihosting">
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1582beef024">
+      </source>
       <source file="..\..\..\cmsis\core_cm4.h" lastModified="1582beeeff7">
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1582beef024">
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1582bef21aa">
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1582bef21a7">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1582bef6a4c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1582bef9d83">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1582bef6a4c">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1582c31d5b5">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
@@ -26,20 +26,20 @@
       </source>
       <source file="..\..\..\stdio\printf.c" lastModified="1582beee5c8">
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1582bef9d7e">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="1582bef2589">
-         <include file="..\..\..\cmsis\core_cm4.h"/>
-         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
-      </source>
       <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1582bef6fc2">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="1582bef2589">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1582bef9d7e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="1582c32cb44">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -58,12 +58,12 @@
       </source>
       <source file="..\..\..\semihosting\semihosting.h" lastModified="1582beedde7">
       </source>
-      <source file="..\..\..\main.c" lastModified="158b6c84edf">
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1582beef014">
+      </source>
+      <source file="..\..\..\main.c" lastModified="158c1966117">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1582beef014">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1582bef6a68">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -73,13 +73,13 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
+      <source file="..\..\..\semihosting\semihosting.c" lastModified="1582beee5b2">
+         <include file="..\..\..\semihosting\semihosting.h"/>
+      </source>
       <source file="..\..\..\semihosting\sh_cmd.s" lastModified="1582beeddeb">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="1582c31cebc">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
-      </source>
-      <source file="..\..\..\semihosting\semihosting.c" lastModified="1582beee5b2">
-         <include file="..\..\..\semihosting\semihosting.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1582bef219b">
       </source>

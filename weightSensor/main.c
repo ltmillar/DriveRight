@@ -64,6 +64,8 @@ int main(void){
  int ispass1 = 0;
  int ispass2 = 0;
     while(1){//loop while the board is working
+    	int test = adc_convert1();
+    	int test2 = adc_convert2();
      ispass1 = is_pass1(); //B1
      ispass2 = is_pass2(); //B0
     }

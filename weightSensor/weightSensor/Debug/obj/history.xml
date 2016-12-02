@@ -1,47 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_lib -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_lib\include -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\cmsis_boot -I..\..\..\..\..\Users\nathan\Documents\College 2016\EECS 473\DriveRight\DriveRight\weightSensor\semihosting">
-      <target file="syscalls.o" lastModified="158b6c85cc2">
+      <target file="syscalls.o" lastModified="158c1958dbc">
          <source file="..\..\..\syscalls\syscalls.c" lastModified="1582bee3578"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="158b6c85b9c">
+      <target file="stm32f4xx_gpio.o" lastModified="158c1958ca1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1582bef6a51"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="158b6c85d28">
+      <target file="stm32f4xx_dma.o" lastModified="158c1958e26">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1582c31d5b5"/>
       </target>
-      <target file="stm32f4xx_adc.o" lastModified="158b6c85ad5">
+      <target file="stm32f4xx_adc.o" lastModified="158c1958bd1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1582bef9d83"/>
       </target>
-      <target file="stm32f4xx_flash.o" lastModified="158b6c85c17">
+      <target file="stm32f4xx_flash.o" lastModified="158c1958d0f">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="1582c31cebc"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="158b6c85c74">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1582bef21a7"/>
-      </target>
-      <target file="printf.o" lastModified="158b6c85b3d">
+      <target file="printf.o" lastModified="158c1958c40">
          <source file="..\..\..\stdio\printf.c" lastModified="1582beeddf8"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="158b6c85978">
+      <target file="system_stm32f4xx.o" lastModified="158c1958d6d">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1582bef21a7"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="158c19589f1">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1582bef219b"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="158b6c85932">
+      <target file="stm32f4xx_usart.o" lastModified="158c19589b1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1582c32cb4a"/>
       </target>
-      <target file="main.o" lastModified="158b6c859cd">
-         <source file="..\..\..\main.c" lastModified="158b6c84edf"/>
+      <target file="main.o" lastModified="158c1973907">
+         <source file="..\..\..\main.c" lastModified="158c1966117"/>
       </target>
-      <target file="sh_cmd.o" lastModified="158b6c85c25">
+      <target file="sh_cmd.o" lastModified="158c1958d20">
          <source file="..\..\..\semihosting\sh_cmd.s" lastModified="1582beeddeb"/>
       </target>
-      <target file="semihosting.o" lastModified="158b6c858b6">
+      <target file="semihosting.o" lastModified="158c195891e">
          <source file="..\..\..\semihosting\semihosting.c" lastModified="1582beedde2"/>
       </target>
-      <target file="IOToggle.o" lastModified="158b6c85d73">
-         <source file="..\..\..\example\IOToggle.c" lastModified="1582c2698de"/>
-      </target>
-      <target file="stm32f4xx_rcc.o" lastModified="158b6c85a52">
+      <target file="stm32f4xx_rcc.o" lastModified="158c1958b50">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1582bef6a68"/>
+      </target>
+      <target file="IOToggle.o" lastModified="158c1958e71">
+         <source file="..\..\..\example\IOToggle.c" lastModified="1582c2698de"/>
       </target>
    </processor>
 </history>
