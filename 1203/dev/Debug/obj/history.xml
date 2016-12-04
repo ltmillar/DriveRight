@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -D__FPU_USED -DUSE_STDPERIPH_DRIVER -ID:\DriveRight\DR_RTOS_SD_Revised\cmsis_lib\include -ID:\DriveRight\DR_RTOS_SD_Revised\FreeRTOS\Source\include -ID:\ -ID:\DriveRight\DR_RTOS_SD_Revised\Source\Fatfs -ID:\DriveRight\DR_RTOS_SD_Revised\Source\Pi_communication -ID:\DriveRight\DR_RTOS_SD_Revised\Source\Accelerometer -ID:\DriveRight\DR_RTOS_SD_Revised\FreeRTOS\Source\portable\GCC\ARM_CM4F -ID:\DriveRight\DR_RTOS_SD_Revised\cmsis_lib -ID:\DriveRight\DR_RTOS_SD_Revised\FreeRTOS\Source -ID:\DriveRight\DR_RTOS_SD_Revised\FreeRTOS -ID:\DriveRight\DR_RTOS_SD_Revised\Source -ID:\DriveRight\DR_RTOS_SD_Revised\Source\WeightSensor -ID:\DriveRight -ID:\DriveRight\DR_RTOS_SD_Revised\Source\GPS module -ID:\DriveRight\DR_RTOS_SD_Revised\Source\Arducam -ID:\DriveRight\DR_RTOS_SD_Revised\Source\BSP -ID:\DriveRight\DR_RTOS_SD_Revised\FreeRTOS\Source\portable\GCC -ID:\DriveRight\DR_RTOS_SD_Revised -ID:\DriveRight\DR_RTOS_SD_Revised\cmsis_boot -ID:\DriveRight\DR_RTOS_SD_Revised\FreeRTOS\Source\portable -ID:\DriveRight\DR_RTOS_SD_Revised\cmsis">
+      <target file="IOToggle.o" lastModified="158c674c227">
+         <source file="..\..\..\Source\WeightSensor\IOToggle.c" lastModified="158a63b0b54"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="158c674c07e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="158a253394d"/>
+      </target>
+      <target file="diskio.o" lastModified="158c674bb79">
+         <source file="..\..\..\Source\Fatfs\diskio.c" lastModified="158b7212f50"/>
+      </target>
+      <target file="arducam.o" lastModified="158c67b569d">
+         <source file="..\..\..\Source\Arducam\arducam.c" lastModified="158c67b4b97"/>
+      </target>
+      <target file="tasks.o" lastModified="158c674bf79">
+         <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="143653ac150"/>
+      </target>
+      <target file="Pi_comm.o" lastModified="158c674be4f">
+         <source file="..\..\..\Source\Pi_communication\Pi_comm.c" lastModified="158c58f1273"/>
+      </target>
+      <target file="system_stm32f4xx(1).o" lastModified="158c674c82f">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx(1).c" lastModified="158bbf8fdd9"/>
+      </target>
+      <target file="ADC3_DMA.o" lastModified="158c674c7db">
+         <source file="..\..\..\Source\WeightSensor\ADC3_DMA.c" lastModified="158acb8f7da"/>
+      </target>
+      <target file="croutine.o" lastModified="158c674c561">
+         <source file="..\..\..\FreeRTOS\Source\croutine.c" lastModified="143653ab1b0"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="158c674c94b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="158a2531a31"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="158c674bde7">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="158a2531607"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="158c674c144">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="158a2531f3b"/>
+      </target>
+      <target file="startup_stm32f4xx(1).o" lastModified="158c674c5aa">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx(1).c" lastModified="158bbf8fdba"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="158c674c670">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="158a2532999"/>
+      </target>
+      <target file="queue.o" lastModified="158c674c3b6">
+         <source file="..\..\..\FreeRTOS\Source\queue.c" lastModified="143653ac150"/>
+      </target>
+      <target file="Accelerometer.o" lastModified="158c674c1cf">
+         <source file="..\..\..\Source\Accelerometer\Accelerometer.c" lastModified="158ac3ecf4e"/>
+      </target>
+      <target file="stm32_sd_spi.o" lastModified="158c674c6fc">
+         <source file="..\..\..\Source\BSP\stm32_sd_spi.c" lastModified="158bbe820ce"/>
+      </target>
+      <target file="unicode.o" lastModified="158c674baab">
+         <source file="..\..\..\Source\Fatfs\options\unicode.c" lastModified="14b711da840"/>
+      </target>
+      <target file="list.o" lastModified="158c674c0d3">
+         <source file="..\..\..\FreeRTOS\Source\list.c" lastModified="143653ab1b0"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="158c674bcfc">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="158a2534d16"/>
+      </target>
+      <target file="syscalls(3).o" lastModified="158c674c01c">
+         <source file="..\..\..\syscalls\syscalls(3).c" lastModified="158bbbbc0ec"/>
+      </target>
+      <target file="port.o" lastModified="158c674c327">
+         <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c" lastModified="158b6edc192"/>
+      </target>
+      <target file="timers.o" lastModified="158c674bd67">
+         <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="143653ac150"/>
+      </target>
+      <target file="Bluetooth.o" lastModified="158c674bc81">
+         <source file="..\..\..\Bluetooth.c" lastModified="1588a416728"/>
+      </target>
+      <target file="stm32_spi.o" lastModified="158c674c5fd">
+         <source file="..\..\..\Source\BSP\stm32_spi.c" lastModified="158c1ed2497"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="158c674c775">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="158a2532422"/>
+      </target>
+      <target file="syscall.o" lastModified="158c674bfc0">
+         <source file="..\..\..\Source\Fatfs\options\syscall.c" lastModified="14d2aeba5a0"/>
+      </target>
+      <target file="ff.o" lastModified="158c674c509">
+         <source file="..\..\..\Source\Fatfs\ff.c" lastModified="15879816742"/>
+      </target>
+      <target file="heap_1.o" lastModified="158c674c880">
+         <source file="..\..\..\FreeRTOS\Source\portable\MemMang\heap_1.c" lastModified="143653ab1b0"/>
+      </target>
+      <target file="GPS_parsing.o" lastModified="158c674bed7">
+         <source file="..\..\..\Source\GPS module\GPS_parsing.c" lastModified="158b1c7c66a"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="158c674bb20">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="158a2530f25"/>
+      </target>
+      <target file="main.o" lastModified="158c674bc10">
+         <source file="..\..\..\main.c" lastModified="158c6747753"/>
+      </target>
+   </processor>
+</history>
