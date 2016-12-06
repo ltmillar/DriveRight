@@ -23,8 +23,28 @@ while x == '':
 
 #record in loop, wait for trigger to record video
 while 1:
-    x = ser.read(1)
-    if x == 'A':   #if aggressive driving event
+    with picamera.PiCamera() as camera:
+        stream = picamera.PiCameraCircularIO(camera, seconds=300)
+        camera.start_recording(stream, format='h264')
+        time = strftime("%d%b%Y %H:%M", localtime())
+        camera.annotate_text = 'Drive Right!! @ ' + time
 
-    else if: x == 'C': #if crash event
-    
+        x = ser.read(1)
+        if x != ''
+            time = strftime("%d%b%Y %H:%M", localtime())
+            fileName = strftime("%d%b%Y_%H_%M_%S", localtime())
+            
+            if x == 'A':   #if aggressive driving event
+                camera.annotate_text = 'Aggressive Driving Detected @ ' + time + ' !!!'
+                camera.wait_recording(20)
+                stream.copy_to('/media/pi/VIDEOSD/aggressive/%s.h264' % fileName, seconds=60)
+
+                
+            else if: x == 'C': #if crash event
+                camera.annotate_text = 'CRash Event Detected @ ' + time + ' !!!'
+                camera.wait_recording(120)
+                stream.copy_to('/media/pi/VIDEOSD/crash/%s.h264' % fileName, seconds=300)
+
+            
+            
+            
