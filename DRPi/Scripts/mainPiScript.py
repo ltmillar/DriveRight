@@ -13,9 +13,10 @@ ser = serial.Serial(
     timeout=1
     )
 
-x == ''
+x = ''
 #wait for time from module
 while x == '':
+    print "waiting for time!"
     x = ser.read(1)
     if x == 'B': #update time
         x = ser.readline()
@@ -30,7 +31,7 @@ while 1:
         camera.annotate_text = 'Drive Right!! @ ' + time
 
         x = ser.read(1)
-        if x != ''
+        if x != '':
             time = strftime("%d%b%Y %H:%M", localtime())
             fileName = strftime("%d%b%Y_%H_%M_%S", localtime())
             
@@ -40,7 +41,7 @@ while 1:
                 stream.copy_to('/media/pi/VIDEOSD/aggressive/%s.h264' % fileName, seconds=60)
 
                 
-            else if: x == 'C': #if crash event
+            elif x == 'C': #if crash event
                 camera.annotate_text = 'CRash Event Detected @ ' + time + ' !!!'
                 camera.wait_recording(120)
                 stream.copy_to('/media/pi/VIDEOSD/crash/%s.h264' % fileName, seconds=300)

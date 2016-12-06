@@ -16,8 +16,12 @@ counter = 0
 
 while counter < 100:
     x = ser.read(1);
+
     if x != '':
         print x
+        x = ser.readline()
+        print x
+        x = ''
         time.sleep(1)
     else:
         print 'Counter = ' + str(counter)
