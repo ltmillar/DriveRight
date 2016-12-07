@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/ID:\DriveRight\Dev FreeRTOS\Source\tm_stm32f4_fatfs\fatfs /ID:\ /ID:\DriveRight\Dev FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM4F /ID:\DriveRight\Dev FreeRTOS\Source\tm_stm32f4_fatfs /ID:\DriveRight\Dev FreeRTOS\Source\Pi_communication /ID:\DriveRight\Dev FreeRTOS\cmsis_lib\include /ID:\DriveRight\Dev FreeRTOS\cmsis_lib /ID:\DriveRight\Dev FreeRTOS /ID:\DriveRight\Dev FreeRTOS\FreeRTOS\Source\portable\GCC /ID:\DriveRight\Dev FreeRTOS\Source\Arducam /ID:\DriveRight\Dev FreeRTOS\Source\Accelerometer /ID:\DriveRight\Dev FreeRTOS\cmsis_boot /ID:\DriveRight\Dev FreeRTOS\FreeRTOS /ID:\DriveRight\Dev FreeRTOS\FreeRTOS\Source\portable /ID:\DriveRight\Dev FreeRTOS\Source\tm_stm32f4_delay /ID:\DriveRight\Dev FreeRTOS\Source\GPS module /ID:\DriveRight /ID:\DriveRight\Dev FreeRTOS\FreeRTOS\Source\include /ID:\DriveRight\Dev FreeRTOS\cmsis /ID:\DriveRight\Dev FreeRTOS\Source\tm_stm32f4_fatfs\fatfs\drivers /ID:\DriveRight\Dev FreeRTOS\Source /ID:\DriveRight\Dev FreeRTOS\Source\WeightSensor /ID:\DriveRight\Dev FreeRTOS\Source\tm_stm32f4_spi /ID:\DriveRight\Dev FreeRTOS\Source\tm_stm32f4_gpio /ID:\DriveRight\Dev FreeRTOS\FreeRTOS\Source">
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.c" lastModified="15879816b2a">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sd_sdio.h" lastModified="158ac76b7e3">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\integer.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\integer.h" lastModified="146130d4030">
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\list.c" lastModified="143653ab598">
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.h" lastModified="1525561da9d">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\defines.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\queue.c" lastModified="143653ac920">
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.c" lastModified="14de3d6b668">
+         <include file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="143653ad0f0">
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\StackMacros.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\list.h" lastModified="143653ab1b0">
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="158a25365f4">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="158a2532422">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_spi_flash.h" lastModified="14e6eba3570">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\FreeRTOSConfig.h" lastModified="1442ba437eb">
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\task.h" lastModified="143653ab1b0">
+         <include file="..\..\..\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="158a2530091">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Source\GPS module\GPS_parsing.h" lastModified="158a3f5573b">
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\StackMacros.h" lastModified="143653ab1b0">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="158a2531a31">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Source\GPS module\GPS_parsing.c" lastModified="158b1c7d60a">
+         <include file="..\..\..\Source\GPS module\GPS_parsing.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+      </source>
+      <source file="..\..\..\Source\Arducam\ov2640_regs.h" lastModified="158458564eb">
+         <include file="..\..\..\Source\Arducam\arducam.h"/>
+      </source>
+      <source file="..\..\..\Source\WeightSensor\IOToggle.c" lastModified="158a63b0b54">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.h" lastModified="15845957564">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\attributes.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_timer_properties.h" lastModified="149f493cd81">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\defines.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="158a2530097">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.c" lastModified="14f32781393">
+         <include file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h" lastModified="143653ab980">
+         <include file="..\..\..\FreeRTOS\Source\include\projdefs.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOSConfig.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\portable.h"/>
+      </source>
+      <source file="..\..\..\defines.h" lastModified="158b2c0fa5e">
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sdram.h" lastModified="14e26176bd0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="144aa5572f6">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="158a2530f25">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\timers.h" lastModified="143653ab1b0">
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\Source\WeightSensor\ADC3_DMA.c" lastModified="158acb8fbc2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\Source\WeightSensor\weightsensor.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\portable.h" lastModified="143653b7cd0">
+         <include file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\semphr.h" lastModified="143653ab1b0">
+         <include file="..\..\..\FreeRTOS\Source\include\queue.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h" lastModified="143653ab1b0">
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\mpu_wrappers.h" lastModified="143653ab1b0">
+      </source>
+      <source file="..\..\..\Bluetooth.h" lastModified="1588a436585">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="158a2532994">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="158a2531f34">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Bluetooth.c" lastModified="1588a4176c8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\Bluetooth.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\projdefs.h" lastModified="143653ab1b0">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="158a2534d11">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ffconf.h" lastModified="158b77b24fe">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="14424c63389">
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sd.h" lastModified="158ac9ececd">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\integer.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\ccsbcs.c" lastModified="149962a7fc0">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_usb.h" lastModified="1494d27a460">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\integer.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\defines.h"/>
+      </source>
+      <source file="..\..\..\Source\Accelerometer\Accelerometer.h" lastModified="158b20bbd7a">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="158a253660c">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1449abdd330">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sd.c" lastModified="158b84b3382">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sd.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\queue.h" lastModified="143653ab1b0">
+      </source>
+      <source file="..\..\..\Source\Accelerometer\Accelerometer.c" lastModified="158ac3ecf4e">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\Source\Accelerometer\Accelerometer.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_delay\attributes.h" lastModified="149ed0f4810">
+      </source>
+      <source file="..\..\..\syscalls\syscalls(1).c" lastModified="158b85ca2c0">
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.h" lastModified="1587362f0ee">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_delay\attributes.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_timer_properties.h"/>
+      </source>
+      <source file="..\..\..\Source\Arducam\arducam.h" lastModified="158b8495458">
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.c" lastModified="158ad094560">
+         <include file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+      </source>
+      <source file="..\..\..\Source\Arducam\arducam.c" lastModified="158b847b0ea">
+         <include file="..\..\..\Source\Arducam\arducam.h"/>
+         <include file="..\..\..\Source\Arducam\ov2640_regs.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\defines.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="158a2536603">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="158a2530f1e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\croutine.c" lastModified="143653ab1b0">
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="14424c671e2">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="158a2531601">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\attributes.h" lastModified="149ed0f4810">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="158a2532999">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="158a2531f3b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc949.c" lastModified="149962a7fc0">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="158a2534d16">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\portable\MemMang\heap_1.c" lastModified="143653ab598">
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.h" lastModified="14f274a5a81">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_gpio\tm_stm32f4_gpio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h" lastModified="14e4a24f588">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\integer.h"/>
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\attributes.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.c" lastModified="14f274a4e96">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc936.c" lastModified="149962a7fc0">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="158a253394d">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.c" lastModified="14dddb31678">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\diskio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_usb.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sdram.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_spi_flash.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sd_sdio.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\drivers\fatfs_sd.h"/>
+      </source>
+      <source file="..\..\..\Source\WeightSensor\weightsensor.h" lastModified="158acb88100">
+      </source>
+      <source file="..\..\..\Source\Pi_communication\Pi_comm.h" lastModified="158b20ffdda">
+         <include file="..\..\..\Source\GPS module\GPS_parsing.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="158a25365f9">
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\unicode.c" lastModified="14b711da840">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc932.c"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc936.c"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc949.c"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc950.c"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\ccsbcs.c"/>
+      </source>
+      <source file="..\..\..\Source\Pi_communication\Pi_comm.c" lastModified="158b23652ad">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\Source\Pi_communication\Pi_comm.h"/>
+         <include file="..\..\..\Source\GPS module\GPS_parsing.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="143653ac538">
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="158a2532412">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="144aa2a83e8">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="158a2533948">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="158a2531a2b">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc932.c" lastModified="149962a7fc0">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="158b29b6e1a">
+         <include file="..\..\..\defines.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_delay\tm_stm32f4_delay.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\tm_stm32f4_fatfs.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_spi\tm_stm32f4_spi.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\Bluetooth.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\semphr.h"/>
+         <include file="..\..\..\Source\GPS module\GPS_parsing.h"/>
+         <include file="..\..\..\Source\Arducam\arducam.h"/>
+         <include file="..\..\..\Source\WeightSensor\weightsensor.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="158acae783c">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="158a2531607">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\syscall.c" lastModified="14d2aeba988">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\include\croutine.h" lastModified="143653ab1b0">
+         <include file="..\..\..\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h" lastModified="15879440c08">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\integer.h"/>
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ffconf.h"/>
+      </source>
+      <source file="..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c" lastModified="158aca5b1fd">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\option\cc950.c" lastModified="149962a7fc0">
+         <include file="..\..\..\Source\tm_stm32f4_fatfs\fatfs\ff.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_sdio.h" lastModified="158acae7838">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+</dependencies>
