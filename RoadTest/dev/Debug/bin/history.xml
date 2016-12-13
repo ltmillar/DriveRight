@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=dev.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\dev -TC:\CooCox\CoIDE\configuration\ProgramData\dev/arm-gcc-link.ld -g -LC:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q3\arm-none-eabi\lib\armv7e-m -lm">
+      <target file="dev.elf" lastModified="158b85cc7f1">
+         <source file="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q3\arm-none-eabi\lib\armv7e-m\libm.a" lastModified="1576791f810"/>
+         <source file="..\obj\tm_stm32f4_fatfs.o" lastModified="158b85c9b7b"/>
+         <source file="..\obj\unicode.o" lastModified="158b85c9bc0"/>
+         <source file="..\obj\stm32f4xx_sdio.o" lastModified="158b85c9c24"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="158b85c9c98"/>
+         <source file="..\obj\syscalls(1).o" lastModified="158b85cc5bb"/>
+         <source file="..\obj\diskio.o" lastModified="158b85c9e02"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="158b85c9e57"/>
+         <source file="..\obj\main.o" lastModified="158b85ca080"/>
+         <source file="..\obj\Bluetooth.o" lastModified="158b85ca0e4"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="158b85ca168"/>
+         <source file="..\obj\timers.o" lastModified="158b85ca1cc"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="158b85ca250"/>
+         <source file="..\obj\fatfs_sd.o" lastModified="158b85ca34e"/>
+         <source file="..\obj\Pi_comm.o" lastModified="158b85ca3f7"/>
+         <source file="..\obj\GPS_parsing.o" lastModified="158b85ca45b"/>
+         <source file="..\obj\tm_stm32f4_delay.o" lastModified="158b85ca4de"/>
+         <source file="..\obj\tasks.o" lastModified="158b85ca571"/>
+         <source file="..\obj\syscall.o" lastModified="158b85ca5b6"/>
+         <source file="..\obj\tm_stm32f4_spi.o" lastModified="158b85ca66f"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="158b85ca6e3"/>
+         <source file="..\obj\list.o" lastModified="158b85ca728"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="158b85ca77c"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="158b85ca7f1"/>
+         <source file="..\obj\Accelerometer.o" lastModified="158b85ca845"/>
+         <source file="..\obj\IOToggle.o" lastModified="158b85ca893"/>
+         <source file="..\obj\arducam.o" lastModified="158b85ca9bf"/>
+         <source file="..\obj\port.o" lastModified="158b85caa23"/>
+         <source file="..\obj\queue.o" lastModified="158b85caaad"/>
+         <source file="..\obj\ff.o" lastModified="158b85cabe9"/>
+         <source file="..\obj\croutine.o" lastModified="158b85cac3e"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="158b85cacb2"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="158b85cad26"/>
+         <source file="..\obj\misc.o" lastModified="158b85cad7b"/>
+         <source file="..\obj\ADC3_DMA.o" lastModified="158b85caddf"/>
+         <source file="..\obj\tm_stm32f4_gpio.o" lastModified="158b85cae43"/>
+         <source file="..\obj\heap_1.o" lastModified="158b85cae88"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="158b85caf51"/>
+      </target>
+   </processor>
+</history>
