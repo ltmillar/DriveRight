@@ -30,23 +30,21 @@ while b == False:
         print out
 
 #record in loop, wait for trigger to record video
-while 1:
-    with picamera.PiCamera() as camera:
-        stream = picamera.PiCameraCircularIO(camera, seconds=300)
-        camera.start_recording(stream, format='h264')
-        time = strftime("%d%b%Y %H:%M", localtime())
-        camera.annotate_text = 'Drive Right!! @ ' + time
-        camera.annotate_background = picamera.color.Color('black')        
+with picamera.PiCamera() as camera:
+    stream = picamera.PiCameraCircularIO(camera, seconds=300)
+    camera.start_recording(stream, format='h264')
+    time = strftime("%d%b%Y %H:%M", localtime())
+    camera.annotate_text = 'Drive Right!! @ ' + time
+    camera.annotate_background = picamera.color.Color('black')        
 
-        camera.start_preview()
-        camera.wait_recording(1)
+    camera.start_preview()
+
+    while 1:
         
         x = ser.read(1)
         print 'ser: ' + x
         
         while x != '':
-            x = ser.read(1)
-            print 'ser: ' + x
             
             time = strftime("%d%b%Y %H:%M", localtime())
             fileName = strftime("%d%b%Y_%H_%M_%S", localtime())
@@ -57,10 +55,6 @@ while 1:
                 camera.wait_recording(10)
                 stream.copy_to('/media/pi/VIDEOSD/aggressive/%s.h264' % fileName, seconds=20)
                 subprocess.call(["./aggVidConv.sh", fileName])
-
-                while x != '':
-                    x = ser.read(1)
-                    print 'ser: ' + x
                 
                 
             elif x == 'C': #if crash event
@@ -70,7 +64,4 @@ while 1:
                 stream.copy_to('/media/pi/VIDEOSD/crash/%s.h264' % fileName, seconds=300)
                 subprocess.call(["./vidConv.sh", fileName])
             
-                while x != '':
-                    x = ser.read(1)
-                    print 'ser: ' + x
-            
+            x = ser.read(1)
