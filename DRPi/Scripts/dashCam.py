@@ -15,9 +15,11 @@ with picamera.PiCamera() as camera:
     camera.start_recording(stream, format='h264')
     camera.start_preview()
     try:
-        while i < 4:
-            camera.annotate_text = 'in loop: %d' % i
-            print('in loop')
+        while i < 3:
+            time = strftime("%d%b%Y %H:%M", localtime())
+            camera.annotate_background = picamera.color.Color('red')
+            camera.annotate_text = 'Drive Right!! @ ' + time    
+    
             print(i)
             camera.wait_recording(10)
             if captureVideo(i):

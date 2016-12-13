@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-import time
+from time import sleep, localtime, strftime
 import serial
 import subprocess
+import picamera
 
 ser = serial.Serial(
     port='/dev/ttyAMA0',
@@ -13,14 +14,20 @@ ser = serial.Serial(
     timeout=1
     )
 
+b = True
 x = ''
 #wait for time from module
-while x == '':
+while b == False:
     print "waiting for time!"
     x = ser.read(1)
+    print x
     if x == 'B': #update time
         x = ser.readline()
-        subprocess.call(["./setClock.sh", x])
+        print 'time: ' + x
+        out = subprocess.call(["./setClock.sh", x])
+        if out == 0:
+            b = True
+        print out
 
 #record in loop, wait for trigger to record video
 while 1:
@@ -29,23 +36,41 @@ while 1:
         camera.start_recording(stream, format='h264')
         time = strftime("%d%b%Y %H:%M", localtime())
         camera.annotate_text = 'Drive Right!! @ ' + time
+        camera.annotate_background = picamera.color.Color('black')        
 
+        camera.start_preview()
+        camera.wait_recording(1)
+        
         x = ser.read(1)
-        if x != '':
+        print 'ser: ' + x
+        
+        while x != '':
+            x = ser.read(1)
+            print 'ser: ' + x
+            
             time = strftime("%d%b%Y %H:%M", localtime())
             fileName = strftime("%d%b%Y_%H_%M_%S", localtime())
             
             if x == 'A':   #if aggressive driving event
+                camera.annotate_background = picamera.color.Color('red')
                 camera.annotate_text = 'Aggressive Driving Detected @ ' + time + ' !!!'
-                camera.wait_recording(20)
-                stream.copy_to('/media/pi/VIDEOSD/aggressive/%s.h264' % fileName, seconds=60)
+                camera.wait_recording(10)
+                stream.copy_to('/media/pi/VIDEOSD/aggressive/%s.h264' % fileName, seconds=20)
+                subprocess.call(["./aggVidConv.sh", fileName])
 
+                while x != '':
+                    x = ser.read(1)
+                    print 'ser: ' + x
+                
                 
             elif x == 'C': #if crash event
+                camera.annotate_background = picamera.color.Color('red')
                 camera.annotate_text = 'CRash Event Detected @ ' + time + ' !!!'
                 camera.wait_recording(120)
                 stream.copy_to('/media/pi/VIDEOSD/crash/%s.h264' % fileName, seconds=300)
-
+                subprocess.call(["./vidConv.sh", fileName])
             
-            
+                while x != '':
+                    x = ser.read(1)
+                    print 'ser: ' + x
             
